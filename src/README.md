@@ -17,6 +17,3 @@ A "scaffolding" AI architecture designed to preserve human agency.
 - **style.css**: "Cognitive Clarity" design system.
 - **system_prompt.js**: Contains the XML-based Master Prompt Architecture.
 - **app.js**: Handles application logic and simulates the AI response (Mock Mode).
-
-## Note
-This prototype uses a **Mock AI** to demonstrate the logical constraints without requiring a live API key. To use with real Claude API, update \pp.js\ to make actual fetch requests.
