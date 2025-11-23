@@ -16,4 +16,4 @@ A "scaffolding" AI architecture designed to preserve human agency.
 - **index.html**: Main UI.
 - **style.css**: "Cognitive Clarity" design system.
 - **system_prompt.js**: Contains the XML-based Master Prompt Architecture.
-- **app.js**: Handles application logic and simulates the AI response (Mock Mode).
+- **app.js**: Handles application logic and simulates the AI response.
