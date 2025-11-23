@@ -4,16 +4,18 @@ The main feature is the Socratic Assistant. If you ask it for help with a high-s
 
 The application was built using JavaScript and used XML to create a strict set of rules for the AI. The biggest challenge was fighting against the AI's natural tendency to be a people-pleaser. It was difficult to program the system to say no to user requests without being annoying
 
-Features
-Socratic Assistant: Uses CRIT templates and a 2:1 Reflection-to-Question ratio to guide learning without giving answers.
-Perspective Engine: Uses Steelmanning and Ideological Turing Tests to broaden viewpoints.
-Creative Bridge: Uses First Principles and TRL assessments to ground engineering ideas in reality.
-How to Run
-Open \src/index.html\ in your web browser.
-Select a mode from the top navigation.
-Interact with the chat to see the constraints in action.
-Architecture
-index.html: Main UI.
-style.css: "Cognitive Clarity" design system.
-system_prompt.js: Contains the XML-based Master Prompt Architecture.
-app.js: Handles application logic and simulates the AI response (Mock Mode).
+## Features
+- **Socratic Assistant**: Uses CRIT templates and a 2:1 Reflection-to-Question ratio to guide learning without giving answers.
+- **Perspective Engine**: Uses Steelmanning and Ideological Turing Tests to broaden viewpoints.
+- **Creative Bridge**: Uses First Principles and TRL assessments to ground engineering ideas in reality.
+
+## How to Run
+1. Open \src/index.html\ in your web browser.
+2. Select a mode from the top navigation.
+3. Interact with the chat to see the constraints in action.
+
+## Architecture
+- **index.html**: Main UI.
+- **style.css**: "Cognitive Clarity" design system.
+- **system_prompt.js**: Contains the XML-based Master Prompt Architecture.
+- **app.js**: Handles application logic and simulates the AI response.
