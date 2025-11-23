@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="logo">
+                <h1>Parallax</h1>
+            </div>
+            <nav class="mode-selector">
+                <button class="mode-btn active" id="btn-socratic">Socratic Assistant</button>
+                <button class="mode-btn" id="btn-perspective">Perspective Engine</button>
+                <button class="mode-btn" id="btn-creative">Creative Bridge</button>
+            </nav>
+        </header>
+
+        <!-- Main Chat Area -->
+        <main class="chat-interface">
+            <div id="chat-history" class="chat-history">
+                <div class="message system-message">
+                    <div class="message-content">
+                        <p><strong>Parallax System Online.</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <textarea id="user-input" placeholder="Enter your inquiry..." rows="3"></textarea>
+                <button id="send-btn">Send</button>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="context-panel">
+            <div class="panel-section">
+                <h3>Active Constraints</h3>
+                <div id="active-constraints" class="constraints-list">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
