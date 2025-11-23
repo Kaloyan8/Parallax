@@ -9,11 +9,6 @@ The application was built using JavaScript and used XML to create a strict set o
 - **Perspective Engine**: Uses Steelmanning and Ideological Turing Tests to broaden viewpoints.
 - **Creative Bridge**: Uses First Principles and TRL assessments to ground engineering ideas in reality.
 
-## How to Run
-1. Open \src/index.html\ in your web browser.
-2. Select a mode from the top navigation.
-3. Interact with the chat to see the constraints in action.
-
 ## Architecture
 - **index.html**: Main UI.
 - **style.css**: "Cognitive Clarity" design system.
