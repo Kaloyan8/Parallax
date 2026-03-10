@@ -1,16 +1,52 @@
-As artificial intelligence gets smarter, it is becoming too easy to let computers make our decisions for us. Parallax is a tool designed to fix this by acting as a thinking partner rather than a replacement. Instead of simply giving you the answer, it uses the Claude API to challenge your assumptions and force you to think through problems yourself.
+Parallax: Cognitive Operating System
 
-The main feature is the Socratic Assistant. If you ask it for help with a high-stakes problem, like firing a co-founder, it refuses to just write the email for you. Instead, it guides you through the legal and ethical risks so you can make the right choice. Also included are early prototypes for two other modes: a Perspective Engine that helps you understand opposing viewpoints, and a Creative Bridge that checks if your invention ideas are actually realistic. All modes require further development and testing.
+A "scaffolding" AI architecture designed to preserve human agency. Rather than replacing human decision-making, Parallax utilizes strict XML-based constraint prompting to act as a Socratic reasoning partner.
 
-The application was built using JavaScript and used XML to create a strict set of rules for the AI. The biggest challenge was fighting against the AI's natural tendency to be a people-pleaser. It was difficult to program the system to say no to user requests without being annoying
+Core Architecture
 
-## Features
-- **Socratic Assistant**: Uses CRIT templates and a 2:1 Reflection-to-Question ratio to guide learning without giving answers.
-- **Perspective Engine**: Uses Steelmanning and Ideological Turing Tests to broaden viewpoints.
-- **Creative Bridge**: Uses First Principles and TRL assessments to ground engineering ideas in reality.
+This is a full-stack application utilizing an Express.js backend to securely handle Anthropic API routing, paired with a vanilla JavaScript/CSS frontend.
 
-## Architecture
-- **index.html**: Main UI.
-- **style.css**: "Cognitive Clarity" design system.
-- **system_prompt.js**: Contains the XML-based Master Prompt Architecture.
-- **app.js**: Handles application logic and simulates the AI response.
+system_prompt.js: The core engineering artifact. Contains the XML-based Master Prompt Architecture that forces the LLM to output structured <thinking> tags before delivering conversational responses.
+
+server.js: Express backend handling CORS, environment variables, and secure API payload generation to the Claude 3.5 Sonnet endpoint.
+
+app.js: Frontend state management and DOM parsing logic to separate the LLM's internal cognitive state from the user-facing UI.
+
+style.css: "Cognitive Clarity" design system.
+
+Modes of Operation
+
+Socratic Assistant: Uses CRIT templates and a 2:1 Reflection-to-Question ratio to guide learning without giving answers.
+
+Perspective Engine: Uses Steelmanning and Ideological Turing Tests to broaden viewpoints.
+
+Creative Bridge: Uses First Principles and TRL assessments to ground engineering ideas in reality.
+
+Local Deployment Instructions
+
+Prerequisites
+
+Node.js installed
+
+An active Anthropic API Key
+
+Installation
+
+Clone the repository.
+
+Install the backend dependencies:
+
+npm install
+
+
+Create a .env file in the root directory and add your Anthropic API key:
+
+ANTHROPIC_API_KEY=your_api_key_here
+
+
+Start the Express server:
+
+npm start
+
+
+Open your browser and navigate to the local port (default: http://localhost:3000 - Note: ensure your frontend is served or open index.html via a local live server that points to the correct backend port).
